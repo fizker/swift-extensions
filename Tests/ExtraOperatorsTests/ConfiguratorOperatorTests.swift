@@ -37,4 +37,14 @@ final class ConfiguratorOperatorTests: XCTestCase {
 		XCTAssertEqual(0, instance.a)
 		XCTAssertEqual(1, actual.a)
 	}
+
+	func test__operator__passingStruct_oneAssignmentIsThrowing__entireOperationBecomesThrowing() async throws {
+		func riskyValue() throws -> Int { 1 }
+
+		let value = try TestStruct() ~ {
+			$0.a = try riskyValue()
+		}
+
+		XCTAssertEqual(value.a, 1)
+	}
 }

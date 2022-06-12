@@ -41,8 +41,8 @@ infix operator ~: AdditionPrecedence
 /// - Parameter subject: The object to modify.
 /// - Parameter fn: The function that will be called to modify the subject. The subject will always be modifiable in this function.
 /// - Returns: A modified version. If the subject is a struct, a copy will be returned. If the subject is a class, it will be the same instance as was passed in.
-public func ~<T>(_ subject: T, _ fn: (inout T) -> Void) -> T {
+public func ~<T>(_ subject: T, _ fn: (inout T) throws -> Void) rethrows -> T {
 	var s = subject
-	fn(&s)
+	try fn(&s)
 	return s
 }

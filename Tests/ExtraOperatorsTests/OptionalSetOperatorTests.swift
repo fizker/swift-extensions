@@ -62,4 +62,24 @@ final class OptionalSetOperatorTests: XCTestCase {
 
 		XCTAssertEqual(root?.a, 2)
 	}
+
+	func test__operator__lhsIsNotNil_rhsIsThrowing__entireOperationBecomesThrowing_lhsIsUnmodified() async throws {
+		var lhs: Int? = 2
+
+		func riskyValue() throws -> Int { 1 }
+
+		try lhs ??= riskyValue()
+
+		XCTAssertEqual(lhs, 2)
+	}
+
+	func test__operator__lhsIsNil_rhsIsThrowing__entireOperationBecomesThrowing_lhsIsUpdated() async throws {
+		var lhs: Int? = nil
+
+		func riskyValue() throws -> Int { 1 }
+
+		try lhs ??= riskyValue()
+
+		XCTAssertEqual(lhs, 1)
+	}
 }

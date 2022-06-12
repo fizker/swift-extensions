@@ -23,8 +23,8 @@ infix operator ??=: AssignmentPrecedence
 ///
 /// - Parameter lhs: The property to modify. The property must be modifiable.
 /// - Parameter rhs: The value to assign if the lhs is nil. The rhs value will not be read unless the lhs value is nil. This means that expensive operations are only paid for if necessary.
-public func ??=<T>(lhs: inout T?, rhs: @autoclosure () -> T) {
+public func ??=<T>(lhs: inout T?, rhs: @autoclosure () throws -> T) rethrows {
 	guard lhs == nil
 	else { return }
-	lhs = rhs()
+	lhs = try rhs()
 }
