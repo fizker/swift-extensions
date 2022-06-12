@@ -1,5 +1,5 @@
 import XCTest
-import ExtraOperators
+import FzkExtensions
 
 private class TestClass {
 	var a: Int = 0

@@ -1,5 +1,5 @@
 import XCTest
-import ExtraOperators
+import FzkExtensions
 
 private struct TestStruct {
 	var a: Int?

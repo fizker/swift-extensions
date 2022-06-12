@@ -3,22 +3,25 @@
 import PackageDescription
 
 let package = Package(
-	name: "swift-extra-operators",
+	name: "swift-extensions",
 	products: [
 		.library(
-			name: "ExtraOperators",
-			targets: ["ExtraOperators"]
+			name: "FzkExtensions",
+			targets: [
+				"FzkExtensions"
+			]
 		),
 	],
 	dependencies: [
 	],
 	targets: [
 		.target(
-			name: "ExtraOperators",
-			dependencies: []),
+			name: "FzkExtensions",
+			dependencies: []
+		),
 		.testTarget(
-			name: "ExtraOperatorsTests",
-			dependencies: ["ExtraOperators"]
+			name: "ExtensionsTests",
+			dependencies: ["FzkExtensions"]
 		),
 	]
 )
