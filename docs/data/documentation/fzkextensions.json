@@ -1,0 +1,290 @@
+{
+  "abstract" : [
+    {
+      "text" : "A collection of small extensions and custom operators.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "FzkExtensions",
+    "modules" : [
+      {
+        "name" : "FzkExtensions"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "FzkExtensions"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-"
+      ],
+      "title" : "Extensions"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/__=(_:_:)",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/~(_:_:)"
+      ],
+      "title" : "Operators"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fzkextensions"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FzkExtensions/documentation/FzkExtensions": {
+  "abstract" : [
+    {
+      "text" : "A collection of small extensions and custom operators.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FzkExtensions",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Array+removingAt": {
+  "abstract" : [
+    {
+      "text" : "Non-mutating way to remove a single item and return the resulting array.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Array.removing(at index:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/array+removingat"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/RandomAccessCollection+-safe-": {
+  "abstract" : [
+    {
+      "text" : "Safely retrieving an element from a RandomAccessCollection.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "RandomAccessCollection+[safe:]",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/__=(_:_:)": {
+  "abstract" : [
+    {
+      "text" : "Assigns the lhs if it is nil, otherwise it is unmodified.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "??="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, () "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/__=(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "??=(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/__=(_:_:)"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/~(_:_:)": {
+  "abstract" : [
+    {
+      "text" : "Configurator operator allowing the left-hand side to be modified by the function passed to the right-hand side.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "~"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/~(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "~(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/~(_:_:)"
+}
+}
+}

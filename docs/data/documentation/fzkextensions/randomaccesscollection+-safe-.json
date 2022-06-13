@@ -1,0 +1,171 @@
+{
+  "abstract" : [
+    {
+      "text" : "Safely retrieving an element from a RandomAccessCollection.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "FzkExtensions"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "RandomAccessCollection+[safe:]"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Accessing a ",
+              "type" : "text"
+            },
+            {
+              "code" : "RandomAccessCollection",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " like ",
+              "type" : "text"
+            },
+            {
+              "code" : "Array",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " by index might produce a fatal error, if the index is out of bounds.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This adds a subscript function that will instead return an ",
+              "type" : "text"
+            },
+            {
+              "code" : "Optional",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " which is ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " if the index is out of bounds.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Example",
+          "level" : 2,
+          "text" : "Example",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "let array = [1,2,3]",
+            "assert(array[safe: -1] == nil)",
+            "assert(array[safe: 0] == 1)",
+            "assert(array[safe: 1] == 2)",
+            "assert(array[safe: 2] == 3)",
+            "assert(array[safe: 3] == nil)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt"
+      ],
+      "title" : "Extensions"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FzkExtensions/documentation/FzkExtensions": {
+  "abstract" : [
+    {
+      "text" : "A collection of small extensions and custom operators.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FzkExtensions",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Array+removingAt": {
+  "abstract" : [
+    {
+      "text" : "Non-mutating way to remove a single item and return the resulting array.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Array.removing(at index:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/array+removingat"
+}
+}
+}

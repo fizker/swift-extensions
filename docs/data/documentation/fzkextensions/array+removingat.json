@@ -1,0 +1,173 @@
+{
+  "abstract" : [
+    {
+      "text" : "Non-mutating way to remove a single item and return the resulting array.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "FzkExtensions"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Array.removing(at index:)"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "code" : "Array",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " has a mutating function ",
+              "type" : "text"
+            },
+            {
+              "code" : "remove(at index:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", which mutates the array and returns the removed item.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "But this requires the array to be mutable, and it cannot be easily chained with other non-mutating functions like ",
+              "type" : "text"
+            },
+            {
+              "code" : "sorted()",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "filter(_;)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "map(_:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Example",
+          "level" : 2,
+          "text" : "Example",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "\/\/ Immutable array",
+            "let array = [1,2,3]",
+            "",
+            "let newArray = array.removing(at: 2).map { $0 + 1 }"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-"
+      ],
+      "title" : "Extensions"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fzkextensions\/array+removingat"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FzkExtensions/documentation/FzkExtensions": {
+  "abstract" : [
+    {
+      "text" : "A collection of small extensions and custom operators.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FzkExtensions",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/RandomAccessCollection+-safe-": {
+  "abstract" : [
+    {
+      "text" : "Safely retrieving an element from a RandomAccessCollection.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "RandomAccessCollection+[safe:]",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
+}
+}
+}
