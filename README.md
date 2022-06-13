@@ -2,6 +2,8 @@
 
 A collection of small extensions and custom operators.
 
+[DocC documentation](https://fizker.github.io/swift-extensions/documentation/fzkextensions/)
+
 ## Extensions
 
 Array#removing(at index:)
@@ -13,7 +15,7 @@ print(removed)
 // Prints "[1.1, 1.5, 1.2, 1.5, 1.3, 1.2]"
 ```
 
-RamdonAccessCollection#[safe index:]
+RandomAccessCollection#[safe index:]
 
 ```swift
 let array = [1,2,3]
