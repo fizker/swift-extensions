@@ -31,7 +31,7 @@
   },
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -41,6 +41,7 @@
     {
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds",
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-"
       ],
       "title" : "Extensions"
@@ -94,6 +95,52 @@
   "title" : "Array.removing(at index:)",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/array+removingat"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Date+ISO8601WithFractionalSeconds": {
+  "abstract" : [
+    {
+      "text" : "Extensions to ",
+      "type" : "text"
+    },
+    {
+      "code" : "Date",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", ",
+      "type" : "text"
+    },
+    {
+      "code" : "JSONEncoder",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " and ",
+      "type" : "text"
+    },
+    {
+      "code" : "JSONDecoder",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " for transforming between ISO 8601-formatted dates and ",
+      "type" : "text"
+    },
+    {
+      "code" : "Date",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " objects, while preserving fractional seconds.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Date+ISO8601WithFractionalSeconds",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/RandomAccessCollection+-safe-": {
   "abstract" : [

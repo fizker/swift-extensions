@@ -1,0 +1,319 @@
+{
+  "abstract" : [
+    {
+      "text" : "Extensions to ",
+      "type" : "text"
+    },
+    {
+      "code" : "Date",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", ",
+      "type" : "text"
+    },
+    {
+      "code" : "JSONEncoder",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " and ",
+      "type" : "text"
+    },
+    {
+      "code" : "JSONDecoder",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " for transforming between ISO 8601-formatted dates and ",
+      "type" : "text"
+    },
+    {
+      "code" : "Date",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " objects, while preserving fractional seconds.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "FzkExtensions"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Date+ISO8601WithFractionalSeconds"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The relevant standards are document here:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "https:\/\/www.ietf.org\/rfc\/rfc3339",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The built-in encoders and decoders do not support fractional seconds. This means that trying to parse dates created by most other languages will fail.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Example-for-using-encoder-and-decoder",
+          "level" : 2,
+          "text" : "Example for using encoder and decoder",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "func parseData(_ data: Data) throws -> MyType {",
+            "\tlet decoder = JSONDecoder()",
+            "\tdecoder.dateDecodingStrategy = .iso8601WithFractionalSeconds",
+            "\treturn try decoder.decode(MyType.self, from: data)",
+            "}",
+            "",
+            "func encodeData(_ myType: MyType) throws -> Data {",
+            "\tlet encoder = JSONEncoder()",
+            "\tencoder.dateEncodingStrategy = .iso8601WithFractionalSeconds",
+            "\treturn try encoder.encode(myType)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Example-for-converting-manually",
+          "level" : 2,
+          "text" : "Example for converting manually",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Create a ",
+              "type" : "text"
+            },
+            {
+              "code" : "Date",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " from a string. The init returns ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " if the date could not be parsed:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "if let date = Date(iso8601: \"2019-03-22T13:58:24.371Z\") {",
+            "\tassert(date.timeIntervalSince1970, 1_553_263_104.371)",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Converting a ",
+              "type" : "text"
+            },
+            {
+              "code" : "Date",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to a string",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let date = Date(timeIntervalSince1970: 1_553_263_104.371)",
+            "assert(.iso8601, \"2019-03-22T13:58:24.371Z\")"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-"
+      ],
+      "title" : "Extensions"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://FzkExtensions/documentation/FzkExtensions": {
+  "abstract" : [
+    {
+      "text" : "A collection of small extensions and custom operators.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "FzkExtensions",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Array+removingAt": {
+  "abstract" : [
+    {
+      "text" : "Non-mutating way to remove a single item and return the resulting array.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Array.removing(at index:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/array+removingat"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/RandomAccessCollection+-safe-": {
+  "abstract" : [
+    {
+      "text" : "Safely retrieving an element from a RandomAccessCollection.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "RandomAccessCollection+[safe:]",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
+},
+"https://www.ietf.org/rfc/rfc3339": {
+  "identifier" : "https:\/\/www.ietf.org\/rfc\/rfc3339",
+  "title" : "RFC 3339",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 3339",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/www.ietf.org\/rfc\/rfc3339"
+},
+"https://www.iso.org/iso-8601-date-and-time-format.html": {
+  "identifier" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html",
+  "title" : "ISO 8601",
+  "titleInlineContent" : [
+    {
+      "text" : "ISO 8601",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html"
+}
+}
+}

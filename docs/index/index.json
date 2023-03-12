@@ -1,0 +1,51 @@
+{
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "title" : "Extensions",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/array+removingat",
+            "title" : "Array.removing(at index:)",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds",
+            "title" : "Date+ISO8601WithFractionalSeconds",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-",
+            "title" : "RandomAccessCollection+[safe:]",
+            "type" : "article"
+          },
+          {
+            "title" : "Operators",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/__=(_:_:)",
+            "title" : "func ??= <T>(inout T?, () throws -> T) rethrows",
+            "type" : "op"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/~(_:_:)",
+            "title" : "func ~ <T>(T, (inout T) throws -> Void) rethrows -> T",
+            "type" : "op"
+          }
+        ],
+        "path" : "\/documentation\/fzkextensions",
+        "title" : "FzkExtensions",
+        "type" : "module"
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 0
+  }
+}
