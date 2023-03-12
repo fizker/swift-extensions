@@ -8,4 +8,5 @@ A collection of small extensions and custom operators.
 ### Extensions
 
 - <doc:Array+removingAt>
+- <doc:Date+ISO8601WithFractionalSeconds>
 - <doc:RandomAccessCollection+-safe->
