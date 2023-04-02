@@ -18,3 +18,7 @@ let array = [1,2,3]
 
 let newArray = array.removing(at: 2).map { $0 + 1 }
 ```
+
+## See Also
+
+- ``FzkExtensions/Swift/Array/removing(at:)``
