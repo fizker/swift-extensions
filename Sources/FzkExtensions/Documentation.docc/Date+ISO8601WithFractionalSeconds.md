@@ -1,15 +1,15 @@
-# Date+ISO8601WithFractionalSeconds
+# Handle fractional seconds when encoding/decoding Date in JSON
 
 Extensions to `Date`, `JSONEncoder` and `JSONDecoder` for transforming between ISO 8601-formatted dates and `Date` objects, while preserving fractional seconds.
-
-The relevant standards are document here:
-- [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)
-- [RFC 3339](https://www.ietf.org/rfc/rfc3339)
 
 
 ## Overview
 
 The built-in encoders and decoders do not support fractional seconds. This means that trying to parse dates created by most other languages will fail.
+
+The relevant standards are document here:
+- [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)
+- [RFC 3339](https://www.ietf.org/rfc/rfc3339)
 
 
 ## Example for using encoder and decoder
@@ -44,3 +44,10 @@ Converting a `Date` to a string
 let date = Date(timeIntervalSince1970: 1_553_263_104.371)
 assert(.iso8601, "2019-03-22T13:58:24.371Z")
 ```
+
+## See Also
+
+- ``FzkExtensions/Foundation/Date/init(iso8601:)``
+- ``FzkExtensions/Foundation/Date/iso8601``
+- ``FzkExtensions/Foundation/JSONDecoder/DateDecodingStrategy/iso8601WithFractionalSeconds``
+- ``FzkExtensions/Foundation/JSONEncoder/DateEncodingStrategy/iso8601WithFractionalSeconds``

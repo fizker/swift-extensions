@@ -1,4 +1,4 @@
-# RandomAccessCollection+[safe:]
+# RandomAccessCollection.subscript(safe:)
 
 Safely retrieving an element from a RandomAccessCollection.
 
@@ -20,3 +20,7 @@ assert(array[safe: 1] == 2)
 assert(array[safe: 2] == 3)
 assert(array[safe: 3] == nil)
 ```
+
+## See Also
+
+- ``FzkExtensions/Swift/RandomAccessCollection/subscript(safe:)``
