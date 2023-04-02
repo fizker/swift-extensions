@@ -25,7 +25,7 @@
     ],
     "role" : "article",
     "roleHeading" : "Article",
-    "title" : "RandomAccessCollection+[safe:]"
+    "title" : "RandomAccessCollection.subscript(safe:)"
   },
   "primaryContentSections" : [
     {
@@ -117,6 +117,12 @@
 
   ],
   "seeAlsoSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RandomAccessCollection\/subscript(safe:)"
+      ],
+      "title" : "Related Documentation"
+    },
     {
       "generated" : true,
       "identifiers" : [
@@ -210,9 +216,73 @@
   "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds",
   "kind" : "article",
   "role" : "article",
-  "title" : "Date+ISO8601WithFractionalSeconds",
+  "title" : "Handle fractional seconds when encoding\/decoding Date in JSON",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/RandomAccessCollection/subscript(safe:)": {
+  "abstract" : [
+    {
+      "text" : "Safely returns the element at the given index, or nil if the index is out of bounds.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "subscript"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "safe"
+    },
+    {
+      "kind" : "text",
+      "text" : " _: "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RandomAccessCollection\/subscript(safe:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "subscript(safe:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection\/subscript(safe:)"
 }
 }
 }

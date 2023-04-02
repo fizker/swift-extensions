@@ -14,12 +14,12 @@
           },
           {
             "path" : "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds",
-            "title" : "Date+ISO8601WithFractionalSeconds",
+            "title" : "Handle fractional seconds when encoding\/decoding Date in JSON",
             "type" : "article"
           },
           {
             "path" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-",
-            "title" : "RandomAccessCollection+[safe:]",
+            "title" : "RandomAccessCollection.subscript(safe:)",
             "type" : "article"
           },
           {
@@ -35,6 +35,151 @@
             "path" : "\/documentation\/fzkextensions\/~(_:_:)",
             "title" : "func ~ <T>(T, (inout T) throws -> Void) rethrows -> T",
             "type" : "op"
+          },
+          {
+            "title" : "Extended Modules",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fzkextensions\/foundation\/date\/init(iso8601:)",
+                    "title" : "init?(iso8601: String)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fzkextensions\/foundation\/date\/iso8601",
+                    "title" : "var iso8601: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/fzkextensions\/foundation\/date",
+                "title" : "Date",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Types",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Extended Enumerations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Type Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fzkextensions\/foundation\/jsondecoder\/datedecodingstrategy\/iso8601withfractionalseconds",
+                        "title" : "static let iso8601WithFractionalSeconds: JSONDecoder.DateDecodingStrategy",
+                        "type" : "property"
+                      }
+                    ],
+                    "path" : "\/documentation\/fzkextensions\/foundation\/jsondecoder\/datedecodingstrategy",
+                    "title" : "JSONDecoder.DateDecodingStrategy",
+                    "type" : "extension"
+                  }
+                ],
+                "path" : "\/documentation\/fzkextensions\/foundation\/jsondecoder",
+                "title" : "JSONDecoder",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Extended Enumerations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Type Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/fzkextensions\/foundation\/jsonencoder\/dateencodingstrategy\/iso8601withfractionalseconds",
+                        "title" : "static let iso8601WithFractionalSeconds: JSONEncoder.DateEncodingStrategy",
+                        "type" : "property"
+                      }
+                    ],
+                    "path" : "\/documentation\/fzkextensions\/foundation\/jsonencoder\/dateencodingstrategy",
+                    "title" : "JSONEncoder.DateEncodingStrategy",
+                    "type" : "extension"
+                  }
+                ],
+                "path" : "\/documentation\/fzkextensions\/foundation\/jsonencoder",
+                "title" : "JSONEncoder",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fzkextensions\/foundation",
+            "title" : "Foundation",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Protocols",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Subscripts",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection\/subscript(safe:)",
+                    "title" : "subscript(safe _: Self.Index) -> Self.Element?",
+                    "type" : "subscript"
+                  }
+                ],
+                "path" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection",
+                "title" : "RandomAccessCollection",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fzkextensions\/swift\/array\/removing(at:)",
+                    "title" : "func removing(at: Array<Element>.Index) -> [Element]",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/fzkextensions\/swift\/array",
+                "title" : "Array",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fzkextensions\/swift",
+            "title" : "Swift",
+            "type" : "extension"
           }
         ],
         "path" : "\/documentation\/fzkextensions",
@@ -46,6 +191,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 0
+    "patch" : 1
   }
 }

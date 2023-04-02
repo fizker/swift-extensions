@@ -57,16 +57,25 @@
     ],
     "role" : "article",
     "roleHeading" : "Article",
-    "title" : "Date+ISO8601WithFractionalSeconds"
+    "title" : "Handle fractional seconds when encoding\/decoding Date in JSON"
   },
   "primaryContentSections" : [
     {
       "content" : [
         {
-          "anchor" : "overview",
+          "anchor" : "Overview",
           "level" : 2,
           "text" : "Overview",
           "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The built-in encoders and decoders do not support fractional seconds. This means that trying to parse dates created by most other languages will fail.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
         },
         {
           "inlineContent" : [
@@ -109,21 +118,6 @@
             }
           ],
           "type" : "unorderedList"
-        },
-        {
-          "anchor" : "Overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The built-in encoders and decoders do not support fractional seconds. This means that trying to parse dates created by most other languages will fail.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
         },
         {
           "anchor" : "Example-for-using-encoder-and-decoder",
@@ -227,6 +221,15 @@
   ],
   "seeAlsoSections" : [
     {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/init(iso8601:)",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/iso8601",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONDecoder\/DateDecodingStrategy\/iso8601WithFractionalSeconds",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONEncoder\/DateEncodingStrategy\/iso8601WithFractionalSeconds"
+      ],
+      "title" : "Related Documentation"
+    },
+    {
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
@@ -277,6 +280,228 @@
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/array+removingat"
 },
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation/Date/init(iso8601:)": {
+  "abstract" : [
+    {
+      "text" : "Parses the passed-in value according to the ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " and ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.ietf.org\/rfc\/rfc3339",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " standards.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "iso8601"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/init(iso8601:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(iso8601:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/foundation\/date\/init(iso8601:)"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation/Date/iso8601": {
+  "abstract" : [
+    {
+      "text" : "Formats the date according to the ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " and ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.ietf.org\/rfc\/rfc3339",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " standards.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "iso8601"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/iso8601",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "iso8601",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/foundation\/date\/iso8601"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation/JSONDecoder/DateDecodingStrategy/iso8601WithFractionalSeconds": {
+  "abstract" : [
+    {
+      "text" : "The strategy that formats dates according to the ISO 8601 standard, including support for fractional seconds.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "iso8601WithFractionalSeconds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONDecoderC",
+      "text" : "JSONDecoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONDecoderC20DateDecodingStrategyO",
+      "text" : "DateDecodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONDecoder\/DateDecodingStrategy\/iso8601WithFractionalSeconds",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "iso8601WithFractionalSeconds",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/foundation\/jsondecoder\/datedecodingstrategy\/iso8601withfractionalseconds"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation/JSONEncoder/DateEncodingStrategy/iso8601WithFractionalSeconds": {
+  "abstract" : [
+    {
+      "text" : "The strategy that formats dates according to the ISO 8601 and RFC 3339 standards, including support for fractional seconds.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "iso8601WithFractionalSeconds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+      "text" : "JSONEncoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC20DateEncodingStrategyO",
+      "text" : "DateEncodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONEncoder\/DateEncodingStrategy\/iso8601WithFractionalSeconds",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "iso8601WithFractionalSeconds",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/foundation\/jsonencoder\/dateencodingstrategy\/iso8601withfractionalseconds"
+},
 "doc://FzkExtensions/documentation/FzkExtensions/RandomAccessCollection+-safe-": {
   "abstract" : [
     {
@@ -287,7 +512,7 @@
   "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-",
   "kind" : "article",
   "role" : "article",
-  "title" : "RandomAccessCollection+[safe:]",
+  "title" : "RandomAccessCollection.subscript(safe:)",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
 },

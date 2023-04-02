@@ -52,6 +52,13 @@
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/~(_:_:)"
       ],
       "title" : "Operators"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift"
+      ],
+      "title" : "Extended Modules"
     }
   ],
   "variants" : [
@@ -138,9 +145,20 @@
   "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds",
   "kind" : "article",
   "role" : "article",
-  "title" : "Date+ISO8601WithFractionalSeconds",
+  "title" : "Handle fractional seconds when encoding\/decoding Date in JSON",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/foundation"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/RandomAccessCollection+-safe-": {
   "abstract" : [
@@ -152,9 +170,20 @@
   "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-",
   "kind" : "article",
   "role" : "article",
-  "title" : "RandomAccessCollection+[safe:]",
+  "title" : "RandomAccessCollection.subscript(safe:)",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/__=(_:_:)": {
   "abstract" : [

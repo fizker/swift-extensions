@@ -120,6 +120,12 @@
   ],
   "seeAlsoSections" : [
     {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Array\/removing(at:)"
+      ],
+      "title" : "Related Documentation"
+    },
+    {
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds",
@@ -198,7 +204,7 @@
   "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds",
   "kind" : "article",
   "role" : "article",
-  "title" : "Date+ISO8601WithFractionalSeconds",
+  "title" : "Handle fractional seconds when encoding\/decoding Date in JSON",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds"
 },
@@ -212,9 +218,83 @@
   "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-",
   "kind" : "article",
   "role" : "article",
-  "title" : "RandomAccessCollection+[safe:]",
+  "title" : "RandomAccessCollection.subscript(safe:)",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/Array/removing(at:)": {
+  "abstract" : [
+    {
+      "text" : "Removes the element at the specified position and returns the resulting array.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "removing"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "at"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sa",
+      "text" : "Array"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sa5Indexa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Array\/removing(at:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "removing(at:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/array\/removing(at:)"
 }
 }
 }
