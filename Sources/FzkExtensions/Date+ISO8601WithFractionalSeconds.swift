@@ -14,14 +14,18 @@ public extension Date {
 	/// - parameter iso6801: The value to parse.
 	/// - returns: The parsed `Date`, or `nil` if the input cannot be parsed.
 	init?(iso8601: String) {
-		guard let d = Formatter.iso8601WithFractionalSeconds.date(from: iso8601)
+		guard let d = ISO8601DateFormatter().date(from: iso8601) ?? Formatter.iso8601WithFractionalSeconds.date(from: iso8601)
 		else { return nil }
 		self = d
 	}
 
 	/// Formats the date according to the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) and [RFC 3339](https://www.ietf.org/rfc/rfc3339) standards.
 	var iso8601: String {
-		return Formatter.iso8601WithFractionalSeconds.string(from: self)
+		if timeIntervalSince1970 == floor(timeIntervalSince1970) {
+			return ISO8601DateFormatter().string(from: self)
+		} else {
+			return Formatter.iso8601WithFractionalSeconds.string(from: self)
+		}
 	}
 }
 
