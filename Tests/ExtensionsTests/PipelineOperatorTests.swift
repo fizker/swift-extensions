@@ -44,4 +44,15 @@ final class PipelineOperatorTests: XCTestCase {
 
 		XCTAssertEqual(2, actual)
 	}
+
+	func test__docExample_sync() async throws {
+		func increase(value: Int) -> Int { value + 1 }
+		XCTAssertTrue(1 |> increase |> increase == 3)
+	}
+
+	func test__docExample_async() async throws {
+		func increase(value: Int) async -> Int { value + 1 }
+		let res = await 1 |> increase |> increase == 3
+		XCTAssertTrue(res)
+	}
 }

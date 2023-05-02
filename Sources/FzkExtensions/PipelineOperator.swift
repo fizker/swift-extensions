@@ -9,10 +9,10 @@ infix operator |>: AdditionPrecedence
 /// func increase(value: Int) -> Int { value + 1 }
 ///
 /// // Instead of
-/// increase(increase(increase(1))) == 3
+/// increase(increase(1)) == 3
 ///
 /// // we can now do
-/// 3 |> increase |> increase |> increase == 3
+/// 1 |> increase |> increase == 3
 /// ```
 public func |><T, U>(lhs: T, rhs: (T) throws -> U) rethrows -> U {
 	return try rhs(lhs)
@@ -27,10 +27,10 @@ public func |><T, U>(lhs: T, rhs: (T) throws -> U) rethrows -> U {
 /// func increase(value: Int) async -> Int { value + 1 }
 ///
 /// // Instead of
-/// await increase(increase(increase(1))) == 3
+/// await increase(increase(1)) == 3
 ///
 /// // we can now do
-/// await 3 |> increase |> increase |> increase == 3
+/// await 1 |> increase |> increase == 3
 /// ```
 @available(iOS 13.0.0, *)
 @available(macCatalyst 13.0.0, *)
