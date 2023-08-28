@@ -48,6 +48,8 @@
     },
     {
       "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/__(_:_:)-6eyg3",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/__(_:_:)-7cl90",
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/__=(_:_:)",
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/~(_:_:)"
       ],
@@ -184,6 +186,214 @@
   "title" : "Swift",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/swift"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/__(_:_:)-6eyg3": {
+  "abstract" : [
+    {
+      "text" : "Pipes the left-hand value into the function on the right-hand side and returns the result.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "|>"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "U"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "U"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "U"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/__(_:_:)-6eyg3",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "|>(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/__(_:_:)-6eyg3"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/__(_:_:)-7cl90": {
+  "abstract" : [
+    {
+      "text" : "Pipes the left-hand value into the function on the right-hand side and returns the result.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "|>"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "U"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "U"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "U"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/__(_:_:)-7cl90",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "|>(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/__(_:_:)-7cl90"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/__=(_:_:)": {
   "abstract" : [

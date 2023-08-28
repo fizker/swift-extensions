@@ -27,6 +27,16 @@
             "type" : "groupMarker"
           },
           {
+            "path" : "\/documentation\/fzkextensions\/__(_:_:)-6eyg3",
+            "title" : "func |> <T, U>(T, (T) async throws -> U) async rethrows -> U",
+            "type" : "op"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/__(_:_:)-7cl90",
+            "title" : "func |> <T, U>(T, (T) throws -> U) rethrows -> U",
+            "type" : "op"
+          },
+          {
             "path" : "\/documentation\/fzkextensions\/__=(_:_:)",
             "title" : "func ??= <T>(inout T?, () throws -> T) rethrows",
             "type" : "op"
