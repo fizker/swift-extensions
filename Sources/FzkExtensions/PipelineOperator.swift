@@ -1,6 +1,6 @@
 infix operator |>: AdditionPrecedence
 
-/// Executes `rhs` with `lhs` and returns the result.
+/// Pipes the left-hand value into the function on the right-hand side and returns the result.
 ///
 /// This is a convenience operator. It allows to pass a value through functions without wrapping the value in parantheses.
 ///
@@ -18,7 +18,7 @@ public func |><T, U>(lhs: T, rhs: (T) throws -> U) rethrows -> U {
 	return try rhs(lhs)
 }
 
-/// Executes `rhs` with `lhs` and returns the result.
+/// Pipes the left-hand value into the function on the right-hand side and returns the result.
 ///
 /// This is a convenience operator. It allows to pass a value through functions without wrapping the value in parantheses.
 ///
