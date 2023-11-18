@@ -10,16 +10,16 @@ A collection of small extensions and custom operators.
 - <doc:Date+ISO8601WithFractionalSeconds>
 
 
-### Array
-
-- ``FzkExtensions/Swift/Array/removing(at:)``
-
-
 ### Optional
 
 - ``FzkExtensions/Swift/Optional/unwrap(orThrow:)``
 
 
-### RandomAccessCollection
+### RandomAccessCollection (Array, ArraySlice, …)
 
 - ``FzkExtensions/Swift/RandomAccessCollection/subscript(safe:)``
+
+
+### RangeReplaceableCollection (Array, ArraySlice, …)
+
+- ``FzkExtensions/Swift/RangeReplaceableCollection/removing(at:)``
