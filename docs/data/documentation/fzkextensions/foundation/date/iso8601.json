@@ -65,7 +65,10 @@
     ],
     "modules" : [
       {
-        "name" : "FzkExtensions"
+        "name" : "FzkExtensions",
+        "relatedModules" : [
+          "Foundation"
+        ]
       }
     ],
     "role" : "symbol",

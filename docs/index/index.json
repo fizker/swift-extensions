@@ -8,19 +8,36 @@
             "type" : "groupMarker"
           },
           {
-            "path" : "\/documentation\/fzkextensions\/array+removingat",
-            "title" : "Array.removing(at index:)",
-            "type" : "article"
-          },
-          {
             "path" : "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds",
             "title" : "Handle fractional seconds when encoding\/decoding Date in JSON",
             "type" : "article"
           },
           {
-            "path" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-",
-            "title" : "RandomAccessCollection.subscript(safe:)",
-            "type" : "article"
+            "title" : "Optional",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/swift\/optional\/unwrap(orthrow:)",
+            "title" : "func unwrap(orThrow: () -> Error) throws -> Wrapped",
+            "type" : "method"
+          },
+          {
+            "title" : "RandomAccessCollection (Array, ArraySlice, …)",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection\/subscript(safe:)",
+            "title" : "subscript(safe _: Self.Index) -> Self.Element?",
+            "type" : "subscript"
+          },
+          {
+            "title" : "RangeReplaceableCollection (Array, ArraySlice, …)",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/swift\/rangereplaceablecollection\/removing(at:)",
+            "title" : "func removing(at: Self.Index) -> Self",
+            "type" : "method"
           },
           {
             "title" : "Operators",
@@ -45,6 +62,71 @@
             "path" : "\/documentation\/fzkextensions\/~(_:_:)",
             "title" : "func ~ <T>(T, (inout T) throws -> Void) rethrows -> T",
             "type" : "op"
+          },
+          {
+            "title" : "Enumerations",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Enumeration Cases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/fzkextensions\/unwraperror\/valuewasnil",
+                "title" : "case valueWasNil",
+                "type" : "case"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/fzkextensions\/unwraperror\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fzkextensions\/unwraperror\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/fzkextensions\/unwraperror\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fzkextensions\/unwraperror\/localizeddescription",
+                    "title" : "var localizedDescription: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/fzkextensions\/unwraperror\/error-implementations",
+                "title" : "Error Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/fzkextensions\/unwraperror",
+            "title" : "UnwrapError",
+            "type" : "enum"
           },
           {
             "title" : "Extended Modules",
@@ -142,53 +224,6 @@
             ],
             "path" : "\/documentation\/fzkextensions\/foundation",
             "title" : "Foundation",
-            "type" : "extension"
-          },
-          {
-            "children" : [
-              {
-                "title" : "Extended Protocols",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Subscripts",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection\/subscript(safe:)",
-                    "title" : "subscript(safe _: Self.Index) -> Self.Element?",
-                    "type" : "subscript"
-                  }
-                ],
-                "path" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection",
-                "title" : "RandomAccessCollection",
-                "type" : "extension"
-              },
-              {
-                "title" : "Extended Structures",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fzkextensions\/swift\/array\/removing(at:)",
-                    "title" : "func removing(at: Array<Element>.Index) -> [Element]",
-                    "type" : "method"
-                  }
-                ],
-                "path" : "\/documentation\/fzkextensions\/swift\/array",
-                "title" : "Array",
-                "type" : "extension"
-              }
-            ],
-            "path" : "\/documentation\/fzkextensions\/swift",
-            "title" : "Swift",
             "type" : "extension"
           }
         ],

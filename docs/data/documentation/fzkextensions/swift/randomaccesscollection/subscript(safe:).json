@@ -8,9 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RandomAccessCollection"
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions"
       ]
     ]
   },
@@ -74,7 +72,10 @@
     ],
     "modules" : [
       {
-        "name" : "FzkExtensions"
+        "name" : "FzkExtensions",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",
@@ -269,49 +270,6 @@
   "title" : "FzkExtensions",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions"
-},
-"doc://FzkExtensions/documentation/FzkExtensions/Swift": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift",
-  "kind" : "symbol",
-  "role" : "collection",
-  "title" : "Swift",
-  "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/swift"
-},
-"doc://FzkExtensions/documentation/FzkExtensions/Swift/RandomAccessCollection": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "extension"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "preciseIdentifier" : "s:Sk",
-      "text" : "RandomAccessCollection"
-    }
-  ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RandomAccessCollection",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "RandomAccessCollection"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "RandomAccessCollection",
-  "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/Swift/RandomAccessCollection/subscript(safe:)": {
   "abstract" : [

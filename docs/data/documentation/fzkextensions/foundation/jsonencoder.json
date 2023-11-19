@@ -17,7 +17,10 @@
     "externalID" : "s:e:s:e:s:10Foundation11JSONEncoderC20DateEncodingStrategyO13FzkExtensionsE28iso8601WithFractionalSecondsAEvpZ",
     "modules" : [
       {
-        "name" : "FzkExtensions"
+        "name" : "FzkExtensions",
+        "relatedModules" : [
+          "Foundation"
+        ]
       }
     ],
     "navigatorTitle" : [

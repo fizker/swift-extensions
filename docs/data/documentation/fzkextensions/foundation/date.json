@@ -32,7 +32,10 @@
     ],
     "modules" : [
       {
-        "name" : "FzkExtensions"
+        "name" : "FzkExtensions",
+        "relatedModules" : [
+          "Foundation"
+        ]
       }
     ],
     "navigatorTitle" : [
@@ -172,7 +175,11 @@
 "doc://FzkExtensions/documentation/FzkExtensions/Foundation/Date/init(iso8601:)": {
   "abstract" : [
     {
-      "text" : "Parses the passed-in value according to the ",
+      "text" : "Parses the passed-in value according to the",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
       "type" : "text"
     },
     {
@@ -181,7 +188,11 @@
       "type" : "reference"
     },
     {
-      "text" : " and ",
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "and ",
       "type" : "text"
     },
     {

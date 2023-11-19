@@ -40,11 +40,27 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-"
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds"
       ],
       "title" : "Extensions"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap(orThrow:)"
+      ],
+      "title" : "Optional"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RandomAccessCollection\/subscript(safe:)"
+      ],
+      "title" : "RandomAccessCollection (Array, ArraySlice, …)"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RangeReplaceableCollection\/removing(at:)"
+      ],
+      "title" : "RangeReplaceableCollection (Array, ArraySlice, …)"
     },
     {
       "identifiers" : [
@@ -57,8 +73,13 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift"
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError"
+      ],
+      "title" : "Enumerations"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation"
       ],
       "title" : "Extended Modules"
     }
@@ -90,20 +111,6 @@
   "title" : "FzkExtensions",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions"
-},
-"doc://FzkExtensions/documentation/FzkExtensions/Array+removingAt": {
-  "abstract" : [
-    {
-      "text" : "Non-mutating way to remove a single item and return the resulting array.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
-  "kind" : "article",
-  "role" : "article",
-  "title" : "Array.removing(at index:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/array+removingat"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/Date+ISO8601WithFractionalSeconds": {
   "abstract" : [
@@ -162,30 +169,229 @@
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/foundation"
 },
-"doc://FzkExtensions/documentation/FzkExtensions/RandomAccessCollection+-safe-": {
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/Optional/unwrap(orThrow:)": {
   "abstract" : [
     {
-      "text" : "Safely retrieving an element from a RandomAccessCollection.",
+      "text" : "Unwraps the ",
+      "type" : "text"
+    },
+    {
+      "code" : "Optional",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", throwing if the value cannot be unwrapped.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-",
-  "kind" : "article",
-  "role" : "article",
-  "title" : "RandomAccessCollection.subscript(safe:)",
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "unwrap"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "orThrow"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s5ErrorP",
+      "text" : "Error"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Wrapped"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap(orThrow:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "unwrap(orThrow:)",
   "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
+  "url" : "\/documentation\/fzkextensions\/swift\/optional\/unwrap(orthrow:)"
 },
-"doc://FzkExtensions/documentation/FzkExtensions/Swift": {
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/RandomAccessCollection/subscript(safe:)": {
+  "abstract" : [
+    {
+      "text" : "Safely returns the element at the given index, or nil if the index is out of bounds.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "subscript"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "safe"
+    },
+    {
+      "kind" : "text",
+      "text" : " _: "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RandomAccessCollection\/subscript(safe:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "subscript(safe:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection\/subscript(safe:)"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/RangeReplaceableCollection/removing(at:)": {
+  "abstract" : [
+    {
+      "text" : "Removes the element at the specified position and returns the resulting range.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "removing"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "at"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RangeReplaceableCollection\/removing(at:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "removing(at:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/rangereplaceablecollection\/removing(at:)"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/UnwrapError": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift",
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "UnwrapError"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError",
   "kind" : "symbol",
-  "role" : "collection",
-  "title" : "Swift",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "UnwrapError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "UnwrapError",
   "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/swift"
+  "url" : "\/documentation\/fzkextensions\/unwraperror"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/__(_:_:)-6eyg3": {
   "abstract" : [

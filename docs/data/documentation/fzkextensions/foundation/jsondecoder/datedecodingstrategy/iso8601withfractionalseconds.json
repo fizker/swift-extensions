@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "The strategy that formats dates according to the ISO 8601 standard, including support for fractional seconds.",
+      "text" : "A strategy that formats dates according to the ISO 8601 standard, including support for fractional seconds.",
       "type" : "text"
     }
   ],
@@ -65,7 +65,10 @@
     ],
     "modules" : [
       {
-        "name" : "FzkExtensions"
+        "name" : "FzkExtensions",
+        "relatedModules" : [
+          "Foundation"
+        ]
       }
     ],
     "role" : "symbol",
@@ -236,7 +239,7 @@
 "doc://FzkExtensions/documentation/FzkExtensions/Foundation/JSONDecoder/DateDecodingStrategy/iso8601WithFractionalSeconds": {
   "abstract" : [
     {
-      "text" : "The strategy that formats dates according to the ISO 8601 standard, including support for fractional seconds.",
+      "text" : "A strategy that formats dates according to the ISO 8601 standard, including support for fractional seconds.",
       "type" : "text"
     }
   ],

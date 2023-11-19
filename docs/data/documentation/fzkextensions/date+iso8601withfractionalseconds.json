@@ -228,14 +228,6 @@
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONEncoder\/DateEncodingStrategy\/iso8601WithFractionalSeconds"
       ],
       "title" : "Related Documentation"
-    },
-    {
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-"
-      ],
-      "title" : "Extensions"
     }
   ],
   "variants" : [
@@ -266,24 +258,14 @@
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions"
 },
-"doc://FzkExtensions/documentation/FzkExtensions/Array+removingAt": {
-  "abstract" : [
-    {
-      "text" : "Non-mutating way to remove a single item and return the resulting array.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Array+removingAt",
-  "kind" : "article",
-  "role" : "article",
-  "title" : "Array.removing(at index:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/array+removingat"
-},
 "doc://FzkExtensions/documentation/FzkExtensions/Foundation/Date/init(iso8601:)": {
   "abstract" : [
     {
-      "text" : "Parses the passed-in value according to the ",
+      "text" : "Parses the passed-in value according to the",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
       "type" : "text"
     },
     {
@@ -292,7 +274,11 @@
       "type" : "reference"
     },
     {
-      "text" : " and ",
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "and ",
       "type" : "text"
     },
     {
@@ -397,7 +383,7 @@
 "doc://FzkExtensions/documentation/FzkExtensions/Foundation/JSONDecoder/DateDecodingStrategy/iso8601WithFractionalSeconds": {
   "abstract" : [
     {
-      "text" : "The strategy that formats dates according to the ISO 8601 standard, including support for fractional seconds.",
+      "text" : "A strategy that formats dates according to the ISO 8601 standard, including support for fractional seconds.",
       "type" : "text"
     }
   ],
@@ -451,7 +437,7 @@
 "doc://FzkExtensions/documentation/FzkExtensions/Foundation/JSONEncoder/DateEncodingStrategy/iso8601WithFractionalSeconds": {
   "abstract" : [
     {
-      "text" : "The strategy that formats dates according to the ISO 8601 and RFC 3339 standards, including support for fractional seconds.",
+      "text" : "A strategy that formats dates according to the ISO 8601 and RFC 3339 standards, including support for fractional seconds.",
       "type" : "text"
     }
   ],
@@ -501,20 +487,6 @@
   "title" : "iso8601WithFractionalSeconds",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/foundation\/jsonencoder\/dateencodingstrategy\/iso8601withfractionalseconds"
-},
-"doc://FzkExtensions/documentation/FzkExtensions/RandomAccessCollection+-safe-": {
-  "abstract" : [
-    {
-      "text" : "Safely retrieving an element from a RandomAccessCollection.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/RandomAccessCollection+-safe-",
-  "kind" : "article",
-  "role" : "article",
-  "title" : "RandomAccessCollection.subscript(safe:)",
-  "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/randomaccesscollection+-safe-"
 },
 "https://www.ietf.org/rfc/rfc3339": {
   "identifier" : "https:\/\/www.ietf.org\/rfc\/rfc3339",
