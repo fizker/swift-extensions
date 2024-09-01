@@ -1,4 +1,4 @@
-public extension RandomAccessCollection {
+public extension Collection {
 	/// Safely returns the element at the given index, or nil if the index is out of bounds.
 	///
 	/// Example:

@@ -15,9 +15,9 @@ A collection of small extensions and custom operators.
 - ``FzkExtensions/Swift/Optional/unwrap(orThrow:)``
 
 
-### RandomAccessCollection (Array, ArraySlice, …)
+### Collection (Array, ArraySlice, …)
 
-- ``FzkExtensions/Swift/RandomAccessCollection/subscript(safe:)``
+- ``FzkExtensions/Swift/Collection/subscript(safe:)``
 
 
 ### RangeReplaceableCollection (Array, ArraySlice, …)
