@@ -1,6 +1,7 @@
 import Foundation
 
 extension Formatter {
+	nonisolated(unsafe) // This is not public, so only trusted code can touch it
 	static let iso8601WithFractionalSeconds = ISO8601DateFormatter() ~ {
 		$0.formatOptions = [ .withFractionalSeconds, .withInternetDateTime ]
 	}
