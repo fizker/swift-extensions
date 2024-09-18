@@ -1,32 +1,36 @@
-import XCTest
+import Testing
 import FzkExtensions
 
-final class RandomAccessCollectionExtensionTests: XCTestCase {
-	func test__subscriptSafe__valueAtIndex0_arrayHasItems__returnsValue() async throws {
+struct RandomAccessCollectionExtensionTests {
+	@Test
+	func subscriptSafe__valueAtIndex0_arrayHasItems__returnsValue() async throws {
 		let array = [1,2,3]
 
 		let actual = array[safe: 0]
-		XCTAssertEqual(1, actual)
+		#expect(1 == actual)
 	}
 
-	func test__subscriptSafe__valueAtLastIndex_valueExists__returnsValue() async throws {
+	@Test
+	func subscriptSafe__valueAtLastIndex_valueExists__returnsValue() async throws {
 		let array = [1,2,3]
 
 		let actual = array[safe: 2]
-		XCTAssertEqual(3, actual)
+		#expect(3 == actual)
 	}
 
-	func test__subscriptSafe__valueAtIndex0_arrayIsEmpty__returnsNil() async throws {
+	@Test
+	func subscriptSafe__valueAtIndex0_arrayIsEmpty__returnsNil() async throws {
 		let array: [Int] = []
 
 		let actual = array[safe: 0]
-		XCTAssertNil(actual)
+		#expect(actual == nil)
 	}
 
-	func test__subscriptSafe__valueBeyondLastIndex__returnsNil() async throws {
+	@Test
+	func subscriptSafe__valueBeyondLastIndex__returnsNil() async throws {
 		let array = [1,2,3]
 
 		let actual = array[safe: 3]
-		XCTAssertNil(actual)
+		#expect(actual == nil)
 	}
 }
