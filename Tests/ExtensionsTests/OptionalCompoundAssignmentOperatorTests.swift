@@ -5,7 +5,7 @@ private struct TestStruct {
 	var a: Int?
 }
 
-struct OptionalSetOperatorTests {
+struct OptionalCompoundAssignmentOperatorTests {
 	@Test
 	func operator__lhsIsNil__lhsIsUpdatedToRHS() async throws {
 		var lhs: Int? = nil
