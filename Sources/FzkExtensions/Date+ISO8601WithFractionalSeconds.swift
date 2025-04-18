@@ -14,7 +14,7 @@ public extension Date {
 	///
 	/// It also supports fractional seconds.
 	///
-	/// - parameter iso6801: The value to parse.
+	/// - parameter iso8601: The value to parse.
 	/// - returns: The parsed `Date`, or `nil` if the input cannot be parsed.
 	init?(iso8601: String) {
 		guard let d = ISO8601DateFormatter().date(from: iso8601)

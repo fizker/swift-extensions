@@ -5,14 +5,19 @@ A collection of small extensions and custom operators.
 
 ## Topics
 
-### Extensions
+### Date
 
 - <doc:Date+ISO8601WithFractionalSeconds>
+- ``FzkExtensions/Foundation/Date/init(iso8601:)``
+- ``FzkExtensions/Foundation/Date/iso8601``
+- ``FzkExtensions/Foundation/JSONDecoder/DateDecodingStrategy/iso8601WithFractionalSeconds``
+- ``FzkExtensions/Foundation/JSONEncoder/DateEncodingStrategy/iso8601WithFractionalSeconds``
 
 
 ### Optional
 
 - ``FzkExtensions/Swift/Optional/unwrap(orThrow:)``
+- ``FzkExtensions/UnwrapError``
 
 
 ### Collection (Array, ArraySlice, …)
@@ -23,3 +28,9 @@ A collection of small extensions and custom operators.
 ### RangeReplaceableCollection (Array, ArraySlice, …)
 
 - ``FzkExtensions/Swift/RangeReplaceableCollection/removing(at:)``
+
+
+### Sequence (Array, ArraySlice, …)
+
+- ``FzkExtensions/Swift/Sequence/sorted(by:)``
+- ``FzkExtensions/Swift/Sequence/sorted(by:using:)``
