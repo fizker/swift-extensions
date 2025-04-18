@@ -16,6 +16,7 @@ A collection of small extensions and custom operators.
 
 ### Optional
 
+- ``FzkExtensions/Swift/Optional/unwrap()``
 - ``FzkExtensions/Swift/Optional/unwrap(orThrow:)``
 - ``FzkExtensions/UnwrapError``
 

@@ -21,7 +21,7 @@ struct UnwrapOptionalTests {
 
 	@Test
 	func valueIsNil_noExceptionGiven__throws() async throws {
-		#expect(throws: (any Error).self) { try nilValue.unwrap() }
+		#expect(throws: UnwrapError.self) { try nilValue.unwrap() }
 	}
 
 	@Test
