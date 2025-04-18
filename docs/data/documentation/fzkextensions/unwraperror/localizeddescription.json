@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError\/Error-Implementations"
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError"
       ]
     ]
   },
@@ -212,17 +211,6 @@
   "title" : "UnwrapError",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/unwraperror"
-},
-"doc://FzkExtensions/documentation/FzkExtensions/UnwrapError/Error-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError\/Error-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Error Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/unwraperror\/error-implementations"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/UnwrapError/localizedDescription": {
   "abstract" : [

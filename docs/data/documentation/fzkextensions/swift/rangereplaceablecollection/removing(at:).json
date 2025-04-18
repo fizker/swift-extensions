@@ -8,7 +8,9 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions"
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RangeReplaceableCollection"
       ]
     ]
   },
@@ -18,6 +20,38 @@
   },
   "kind" : "symbol",
   "metadata" : {
+    "conformance" : {
+      "availabilityPrefix" : [
+        {
+          "text" : "Available when",
+          "type" : "text"
+        }
+      ],
+      "conformancePrefix" : [
+        {
+          "text" : "Conforms when",
+          "type" : "text"
+        }
+      ],
+      "constraints" : [
+        {
+          "code" : "Self",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : " is ",
+          "type" : "text"
+        },
+        {
+          "code" : "RangeReplaceableCollection",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : ".",
+          "type" : "text"
+        }
+      ]
+    },
     "extendedModule" : "Swift",
     "externalID" : "s:Sm13FzkExtensionsE8removing2atx5IndexQz_tF",
     "fragments" : [
@@ -55,6 +89,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sl5IndexQa",
         "text" : "Index"
       },
       {
@@ -132,6 +167,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sl5IndexQa",
               "text" : "Index"
             },
             {
@@ -279,6 +315,49 @@
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions"
 },
+"doc://FzkExtensions/documentation/FzkExtensions/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/RangeReplaceableCollection": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:Sm",
+      "text" : "RangeReplaceableCollection"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/RangeReplaceableCollection",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "RangeReplaceableCollection"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "RangeReplaceableCollection",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/rangereplaceablecollection"
+},
 "doc://FzkExtensions/documentation/FzkExtensions/Swift/RangeReplaceableCollection/removing(at:)": {
   "abstract" : [
     {
@@ -286,6 +365,38 @@
       "type" : "text"
     }
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Self",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "RangeReplaceableCollection",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -321,6 +432,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
       "text" : "Index"
     },
     {

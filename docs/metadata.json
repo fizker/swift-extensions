@@ -1,6 +1,6 @@
 {
   "bundleDisplayName" : "FzkExtensions",
-  "bundleIdentifier" : "FzkExtensions",
+  "bundleID" : "FzkExtensions",
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,

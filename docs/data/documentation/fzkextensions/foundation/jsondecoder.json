@@ -44,6 +44,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Extended-Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONDecoder\/DateDecodingStrategy"
       ],

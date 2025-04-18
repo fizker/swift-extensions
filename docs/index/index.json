@@ -1,4 +1,7 @@
 {
+  "includedArchiveIdentifiers" : [
+    "FzkExtensions"
+  ],
   "interfaceLanguages" : {
     "swift" : [
       {
@@ -18,15 +21,15 @@
           },
           {
             "path" : "\/documentation\/fzkextensions\/swift\/optional\/unwrap(orthrow:)",
-            "title" : "func unwrap(orThrow: () -> Error) throws -> Wrapped",
+            "title" : "func unwrap(orThrow: @autoclosure () -> any Error) throws -> Wrapped",
             "type" : "method"
           },
           {
-            "title" : "RandomAccessCollection (Array, ArraySlice, …)",
+            "title" : "Collection (Array, ArraySlice, …)",
             "type" : "groupMarker"
           },
           {
-            "path" : "\/documentation\/fzkextensions\/swift\/randomaccesscollection\/subscript(safe:)",
+            "path" : "\/documentation\/fzkextensions\/swift\/collection\/subscript(safe:)",
             "title" : "subscript(safe _: Self.Index) -> Self.Element?",
             "type" : "subscript"
           },
@@ -55,7 +58,7 @@
           },
           {
             "path" : "\/documentation\/fzkextensions\/__=(_:_:)",
-            "title" : "func ??= <T>(inout T?, () throws -> T) rethrows",
+            "title" : "func ??= <T>(inout T?, @autoclosure () throws -> T) rethrows",
             "type" : "op"
           },
           {
@@ -225,6 +228,38 @@
             "path" : "\/documentation\/fzkextensions\/foundation",
             "title" : "Foundation",
             "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Protocols",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/fzkextensions\/swift\/sequence\/sorted(by:)",
+                    "title" : "func sorted(by: KeyPath<Self.Element, some Comparable>) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/fzkextensions\/swift\/sequence\/sorted(by:using:)",
+                    "title" : "func sorted<SortType>(by: KeyPath<Self.Element, SortType>, using: (SortType, SortType) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/fzkextensions\/swift\/sequence",
+                "title" : "Sequence",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/fzkextensions\/swift",
+            "title" : "Swift",
+            "type" : "extension"
           }
         ],
         "path" : "\/documentation\/fzkextensions",
@@ -236,6 +271,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 1
+    "patch" : 2
   }
 }

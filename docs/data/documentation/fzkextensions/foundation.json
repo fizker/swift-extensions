@@ -33,12 +33,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Extended-Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date"
       ],
       "title" : "Extended Structures"
     },
     {
+      "anchor" : "Extended-Types",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONDecoder",
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONEncoder"

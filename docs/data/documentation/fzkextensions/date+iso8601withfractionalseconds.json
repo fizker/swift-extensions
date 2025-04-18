@@ -221,6 +221,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Related-Documentation",
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/init(iso8601:)",
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/iso8601",

@@ -96,18 +96,23 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError\/valueWasNil"
       ],
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError\/description"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError\/Equatable-Implementations",

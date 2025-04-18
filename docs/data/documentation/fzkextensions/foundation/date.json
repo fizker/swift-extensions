@@ -89,12 +89,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/init(iso8601:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/iso8601"
       ],
