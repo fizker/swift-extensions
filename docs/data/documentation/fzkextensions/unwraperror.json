@@ -94,6 +94,17 @@
   "sections" : [
 
   ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Optional",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap()",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap(orThrow:)"
+      ],
+      "title" : "Optional"
+    }
+  ],
   "topicSections" : [
     {
       "anchor" : "Enumeration-Cases",
@@ -158,6 +169,159 @@
   "title" : "FzkExtensions",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/Optional/unwrap()": {
+  "abstract" : [
+    {
+      "text" : "Unwraps the ",
+      "type" : "text"
+    },
+    {
+      "code" : "Optional",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", throwing if the value cannot be unwrapped.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "unwrap"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13FzkExtensions11UnwrapErrorO",
+      "text" : "UnwrapError"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Wrapped"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "unwrap()",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/optional\/unwrap()"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/Optional/unwrap(orThrow:)": {
+  "abstract" : [
+    {
+      "text" : "Unwraps the ",
+      "type" : "text"
+    },
+    {
+      "code" : "Optional",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", throwing if the value cannot be unwrapped.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "unwrap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "orThrow"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Wrapped"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap(orThrow:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "unwrap(orThrow:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/optional\/unwrap(orthrow:)"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/UnwrapError": {
   "abstract" : [

@@ -229,6 +229,17 @@
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONEncoder\/DateEncodingStrategy\/iso8601WithFractionalSeconds"
       ],
       "title" : "Related Documentation"
+    },
+    {
+      "anchor" : "Date",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/init(iso8601:)",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/iso8601",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONDecoder\/DateDecodingStrategy\/iso8601WithFractionalSeconds",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONEncoder\/DateEncodingStrategy\/iso8601WithFractionalSeconds"
+      ],
+      "title" : "Date"
     }
   ],
   "variants" : [

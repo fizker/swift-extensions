@@ -7,7 +7,7 @@
       {
         "children" : [
           {
-            "title" : "Extensions",
+            "title" : "Date",
             "type" : "groupMarker"
           },
           {
@@ -16,59 +16,38 @@
             "type" : "article"
           },
           {
+            "path" : "\/documentation\/fzkextensions\/foundation\/date\/init(iso8601:)",
+            "title" : "init?(iso8601: String)",
+            "type" : "init"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/foundation\/date\/iso8601",
+            "title" : "var iso8601: String",
+            "type" : "property"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/foundation\/jsondecoder\/datedecodingstrategy\/iso8601withfractionalseconds",
+            "title" : "static let iso8601WithFractionalSeconds: JSONDecoder.DateDecodingStrategy",
+            "type" : "property"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/foundation\/jsonencoder\/dateencodingstrategy\/iso8601withfractionalseconds",
+            "title" : "static let iso8601WithFractionalSeconds: JSONEncoder.DateEncodingStrategy",
+            "type" : "property"
+          },
+          {
             "title" : "Optional",
             "type" : "groupMarker"
           },
           {
+            "path" : "\/documentation\/fzkextensions\/swift\/optional\/unwrap()",
+            "title" : "func unwrap() throws(UnwrapError) -> Wrapped",
+            "type" : "method"
+          },
+          {
             "path" : "\/documentation\/fzkextensions\/swift\/optional\/unwrap(orthrow:)",
-            "title" : "func unwrap(orThrow: @autoclosure () -> any Error) throws -> Wrapped",
+            "title" : "func unwrap<E>(orThrow: @autoclosure () -> E) throws(E) -> Wrapped",
             "type" : "method"
-          },
-          {
-            "title" : "Collection (Array, ArraySlice, …)",
-            "type" : "groupMarker"
-          },
-          {
-            "path" : "\/documentation\/fzkextensions\/swift\/collection\/subscript(safe:)",
-            "title" : "subscript(safe _: Self.Index) -> Self.Element?",
-            "type" : "subscript"
-          },
-          {
-            "title" : "RangeReplaceableCollection (Array, ArraySlice, …)",
-            "type" : "groupMarker"
-          },
-          {
-            "path" : "\/documentation\/fzkextensions\/swift\/rangereplaceablecollection\/removing(at:)",
-            "title" : "func removing(at: Self.Index) -> Self",
-            "type" : "method"
-          },
-          {
-            "title" : "Operators",
-            "type" : "groupMarker"
-          },
-          {
-            "path" : "\/documentation\/fzkextensions\/__(_:_:)-6eyg3",
-            "title" : "func |> <T, U>(T, (T) async throws -> U) async rethrows -> U",
-            "type" : "op"
-          },
-          {
-            "path" : "\/documentation\/fzkextensions\/__(_:_:)-7cl90",
-            "title" : "func |> <T, U>(T, (T) throws -> U) rethrows -> U",
-            "type" : "op"
-          },
-          {
-            "path" : "\/documentation\/fzkextensions\/__=(_:_:)",
-            "title" : "func ??= <T>(inout T?, @autoclosure () throws -> T) rethrows",
-            "type" : "op"
-          },
-          {
-            "path" : "\/documentation\/fzkextensions\/~(_:_:)",
-            "title" : "func ~ <T>(T, (inout T) throws -> Void) rethrows -> T",
-            "type" : "op"
-          },
-          {
-            "title" : "Enumerations",
-            "type" : "groupMarker"
           },
           {
             "children" : [
@@ -132,134 +111,60 @@
             "type" : "enum"
           },
           {
-            "title" : "Extended Modules",
+            "title" : "Collection (Array, ArraySlice, …)",
             "type" : "groupMarker"
           },
           {
-            "children" : [
-              {
-                "title" : "Extended Structures",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Initializers",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fzkextensions\/foundation\/date\/init(iso8601:)",
-                    "title" : "init?(iso8601: String)",
-                    "type" : "init"
-                  },
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fzkextensions\/foundation\/date\/iso8601",
-                    "title" : "var iso8601: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/fzkextensions\/foundation\/date",
-                "title" : "Date",
-                "type" : "extension"
-              },
-              {
-                "title" : "Extended Types",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Extended Enumerations",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "children" : [
-                      {
-                        "title" : "Type Properties",
-                        "type" : "groupMarker"
-                      },
-                      {
-                        "path" : "\/documentation\/fzkextensions\/foundation\/jsondecoder\/datedecodingstrategy\/iso8601withfractionalseconds",
-                        "title" : "static let iso8601WithFractionalSeconds: JSONDecoder.DateDecodingStrategy",
-                        "type" : "property"
-                      }
-                    ],
-                    "path" : "\/documentation\/fzkextensions\/foundation\/jsondecoder\/datedecodingstrategy",
-                    "title" : "JSONDecoder.DateDecodingStrategy",
-                    "type" : "extension"
-                  }
-                ],
-                "path" : "\/documentation\/fzkextensions\/foundation\/jsondecoder",
-                "title" : "JSONDecoder",
-                "type" : "extension"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Extended Enumerations",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "children" : [
-                      {
-                        "title" : "Type Properties",
-                        "type" : "groupMarker"
-                      },
-                      {
-                        "path" : "\/documentation\/fzkextensions\/foundation\/jsonencoder\/dateencodingstrategy\/iso8601withfractionalseconds",
-                        "title" : "static let iso8601WithFractionalSeconds: JSONEncoder.DateEncodingStrategy",
-                        "type" : "property"
-                      }
-                    ],
-                    "path" : "\/documentation\/fzkextensions\/foundation\/jsonencoder\/dateencodingstrategy",
-                    "title" : "JSONEncoder.DateEncodingStrategy",
-                    "type" : "extension"
-                  }
-                ],
-                "path" : "\/documentation\/fzkextensions\/foundation\/jsonencoder",
-                "title" : "JSONEncoder",
-                "type" : "extension"
-              }
-            ],
-            "path" : "\/documentation\/fzkextensions\/foundation",
-            "title" : "Foundation",
-            "type" : "extension"
+            "path" : "\/documentation\/fzkextensions\/swift\/collection\/subscript(safe:)",
+            "title" : "subscript(safe _: Self.Index) -> Self.Element?",
+            "type" : "subscript"
           },
           {
-            "children" : [
-              {
-                "title" : "Extended Protocols",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/fzkextensions\/swift\/sequence\/sorted(by:)",
-                    "title" : "func sorted(by: KeyPath<Self.Element, some Comparable>) -> [Self.Element]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/fzkextensions\/swift\/sequence\/sorted(by:using:)",
-                    "title" : "func sorted<SortType>(by: KeyPath<Self.Element, SortType>, using: (SortType, SortType) throws -> Bool) rethrows -> [Self.Element]",
-                    "type" : "method"
-                  }
-                ],
-                "path" : "\/documentation\/fzkextensions\/swift\/sequence",
-                "title" : "Sequence",
-                "type" : "extension"
-              }
-            ],
-            "path" : "\/documentation\/fzkextensions\/swift",
-            "title" : "Swift",
-            "type" : "extension"
+            "title" : "RangeReplaceableCollection (Array, ArraySlice, …)",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/swift\/rangereplaceablecollection\/removing(at:)",
+            "title" : "func removing(at: Self.Index) -> Self",
+            "type" : "method"
+          },
+          {
+            "title" : "Sequence (Array, ArraySlice, …)",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/swift\/sequence\/sorted(by:)",
+            "title" : "func sorted(by: KeyPath<Self.Element, some Comparable>) -> [Self.Element]",
+            "type" : "method"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/swift\/sequence\/sorted(by:using:)",
+            "title" : "func sorted<SortType>(by: KeyPath<Self.Element, SortType>, using: (SortType, SortType) throws -> Bool) rethrows -> [Self.Element]",
+            "type" : "method"
+          },
+          {
+            "title" : "Operators",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/__(_:_:)-6eyg3",
+            "title" : "func |> <T, U>(T, (T) async throws -> U) async rethrows -> U",
+            "type" : "op"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/__(_:_:)-7cl90",
+            "title" : "func |> <T, U>(T, (T) throws -> U) rethrows -> U",
+            "type" : "op"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/__=(_:_:)",
+            "title" : "func ??= <T>(inout T?, @autoclosure () throws -> T) rethrows",
+            "type" : "op"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/~(_:_:)",
+            "title" : "func ~ <T>(T, (inout T) throws -> Void) rethrows -> T",
+            "type" : "op"
           }
         ],
         "path" : "\/documentation\/fzkextensions",

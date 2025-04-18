@@ -24,12 +24,12 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap(orThrow:)"
+    "url" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap()"
   },
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "Swift",
-    "externalID" : "s:Sq13FzkExtensionsE6unwrap7orThrowxqd__yXK_tqd__YKs5ErrorRd__lF",
+    "externalID" : "s:Sq13FzkExtensionsE6unwrapxyAA11UnwrapErrorOYKF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -45,39 +45,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "genericParameter",
-        "text" : "E"
-      },
-      {
-        "kind" : "text",
-        "text" : ">("
-      },
-      {
-        "kind" : "externalParam",
-        "text" : "orThrow"
-      },
-      {
-        "kind" : "text",
-        "text" : ": "
-      },
-      {
-        "kind" : "attribute",
-        "text" : "@autoclosure "
-      },
-      {
-        "kind" : "text",
-        "text" : "() -> "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "E"
-      },
-      {
-        "kind" : "text",
-        "text" : ") "
+        "text" : "() "
       },
       {
         "kind" : "keyword",
@@ -89,7 +57,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "E"
+        "preciseIdentifier" : "s:13FzkExtensions11UnwrapErrorO",
+        "text" : "UnwrapError"
       },
       {
         "kind" : "text",
@@ -111,7 +80,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
-    "title" : "unwrap(orThrow:)"
+    "title" : "unwrap()"
   },
   "primaryContentSections" : [
     {
@@ -138,47 +107,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "genericParameter",
-              "text" : "E"
-            },
-            {
-              "kind" : "text",
-              "text" : ">("
-            },
-            {
-              "kind" : "externalParam",
-              "text" : "orThrow"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
-              "kind" : "internalParam",
-              "text" : "error"
-            },
-            {
-              "kind" : "text",
-              "text" : ": "
-            },
-            {
-              "kind" : "attribute",
-              "text" : "@autoclosure "
-            },
-            {
-              "kind" : "text",
-              "text" : "() -> "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "E"
-            },
-            {
-              "kind" : "text",
-              "text" : ") "
+              "text" : "() "
             },
             {
               "kind" : "keyword",
@@ -189,8 +118,10 @@
               "text" : "("
             },
             {
+              "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError",
               "kind" : "typeIdentifier",
-              "text" : "E"
+              "preciseIdentifier" : "s:13FzkExtensions11UnwrapErrorO",
+              "text" : "UnwrapError"
             },
             {
               "kind" : "text",
@@ -199,31 +130,6 @@
             {
               "kind" : "typeIdentifier",
               "text" : "Wrapped"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "where"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "E"
-            },
-            {
-              "kind" : "text",
-              "text" : " : "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:s5ErrorP",
-              "text" : "Error"
             }
           ]
         }
@@ -279,10 +185,10 @@
           "code" : [
             "\/\/ Before",
             "guard let value",
-            "else { throw CustomError.valueWasNil }",
+            "else { throw UnwrapError.valueWasNil }",
             "",
             "\/\/ After",
-            "let value = try value.unwrap(orThrow: CustomError.valueWasNil)"
+            "let value = try value.unwrap()"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -320,7 +226,7 @@
       "anchor" : "Optional",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap()",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap(orThrow:)",
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError"
       ],
       "title" : "Optional"
@@ -329,7 +235,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/fzkextensions\/swift\/optional\/unwrap(orthrow:)"
+        "\/documentation\/fzkextensions\/swift\/optional\/unwrap()"
       ],
       "traits" : [
         {

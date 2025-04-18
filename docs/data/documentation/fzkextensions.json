@@ -39,16 +39,22 @@
   ],
   "topicSections" : [
     {
-      "anchor" : "Extensions",
+      "anchor" : "Date",
       "identifiers" : [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds"
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Date+ISO8601WithFractionalSeconds",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/init(iso8601:)",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/iso8601",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONDecoder\/DateDecodingStrategy\/iso8601WithFractionalSeconds",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONEncoder\/DateEncodingStrategy\/iso8601WithFractionalSeconds"
       ],
-      "title" : "Extensions"
+      "title" : "Date"
     },
     {
       "anchor" : "Optional",
       "identifiers" : [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap(orThrow:)"
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap()",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap(orThrow:)",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError"
       ],
       "title" : "Optional"
     },
@@ -67,6 +73,14 @@
       "title" : "RangeReplaceableCollection (Array, ArraySlice, …)"
     },
     {
+      "anchor" : "Sequence-Array-ArraySlice-",
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Sequence\/sorted(by:)",
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Sequence\/sorted(by:using:)"
+      ],
+      "title" : "Sequence (Array, ArraySlice, …)"
+    },
+    {
       "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
@@ -76,23 +90,6 @@
         "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/~(_:_:)"
       ],
       "title" : "Operators"
-    },
-    {
-      "anchor" : "Enumerations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/UnwrapError"
-      ],
-      "title" : "Enumerations"
-    },
-    {
-      "anchor" : "Extended-Modules",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation",
-        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift"
-      ],
-      "title" : "Extended Modules"
     }
   ],
   "variants" : [
@@ -169,27 +166,235 @@
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/date+iso8601withfractionalseconds"
 },
-"doc://FzkExtensions/documentation/FzkExtensions/Foundation": {
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation/Date/init(iso8601:)": {
   "abstract" : [
-
+    {
+      "text" : "Parses the passed-in value according to the",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "and ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.ietf.org\/rfc\/rfc3339",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " standards.",
+      "type" : "text"
+    }
   ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation",
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "iso8601"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/init(iso8601:)",
   "kind" : "symbol",
-  "role" : "collection",
-  "title" : "Foundation",
+  "role" : "symbol",
+  "title" : "init(iso8601:)",
   "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/foundation"
+  "url" : "\/documentation\/fzkextensions\/foundation\/date\/init(iso8601:)"
 },
-"doc://FzkExtensions/documentation/FzkExtensions/Swift": {
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation/Date/iso8601": {
   "abstract" : [
-
+    {
+      "text" : "Formats the date according to the ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " and ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.ietf.org\/rfc\/rfc3339",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " standards.",
+      "type" : "text"
+    }
   ],
-  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift",
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "iso8601"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/Date\/iso8601",
   "kind" : "symbol",
-  "role" : "collection",
-  "title" : "Swift",
+  "role" : "symbol",
+  "title" : "iso8601",
   "type" : "topic",
-  "url" : "\/documentation\/fzkextensions\/swift"
+  "url" : "\/documentation\/fzkextensions\/foundation\/date\/iso8601"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation/JSONDecoder/DateDecodingStrategy/iso8601WithFractionalSeconds": {
+  "abstract" : [
+    {
+      "text" : "A strategy that formats dates according to the ISO 8601 standard, including support for fractional seconds.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "iso8601WithFractionalSeconds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONDecoderC",
+      "text" : "JSONDecoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONDecoderC20DateDecodingStrategyO",
+      "text" : "DateDecodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONDecoder\/DateDecodingStrategy\/iso8601WithFractionalSeconds",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "iso8601WithFractionalSeconds",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/foundation\/jsondecoder\/datedecodingstrategy\/iso8601withfractionalseconds"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Foundation/JSONEncoder/DateEncodingStrategy/iso8601WithFractionalSeconds": {
+  "abstract" : [
+    {
+      "text" : "A strategy that formats dates according to the ISO 8601 and RFC 3339 standards, including support for fractional seconds.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "iso8601WithFractionalSeconds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+      "text" : "JSONEncoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC20DateEncodingStrategyO",
+      "text" : "DateEncodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Foundation\/JSONEncoder\/DateEncodingStrategy\/iso8601WithFractionalSeconds",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "iso8601WithFractionalSeconds",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/foundation\/jsonencoder\/dateencodingstrategy\/iso8601withfractionalseconds"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/Swift/Collection/subscript(safe:)": {
   "abstract" : [
@@ -289,6 +494,67 @@
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/swift\/collection\/subscript(safe:)"
 },
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/Optional/unwrap()": {
+  "abstract" : [
+    {
+      "text" : "Unwraps the ",
+      "type" : "text"
+    },
+    {
+      "code" : "Optional",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", throwing if the value cannot be unwrapped.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "unwrap"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13FzkExtensions11UnwrapErrorO",
+      "text" : "UnwrapError"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Wrapped"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Optional\/unwrap()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "unwrap()",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/optional\/unwrap()"
+},
 "doc://FzkExtensions/documentation/FzkExtensions/Swift/Optional/unwrap(orThrow:)": {
   "abstract" : [
     {
@@ -319,7 +585,15 @@
     },
     {
       "kind" : "text",
-      "text" : "("
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
     },
     {
       "kind" : "externalParam",
@@ -335,12 +609,11 @@
     },
     {
       "kind" : "text",
-      "text" : "() -> any "
+      "text" : "() -> "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:s5ErrorP",
-      "text" : "Error"
+      "text" : "E"
     },
     {
       "kind" : "text",
@@ -352,7 +625,15 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -458,6 +739,318 @@
   "title" : "removing(at:)",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/swift\/rangereplaceablecollection\/removing(at:)"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/Sequence/sorted(by:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the elements of the sequence, sorted by the given KeyPath.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Self",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sorted"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "by"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SL",
+      "text" : "Comparable"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Sequence\/sorted(by:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sorted(by:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/sequence\/sorted(by:)"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/Sequence/sorted(by:using:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the elements of the sequence, sorted by the given KeyPath using the given comparator function.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Self",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sorted"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SortType"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "by"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SortType"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "using"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SortType"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SortType"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/Sequence\/sorted(by:using:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sorted(by:using:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/sequence\/sorted(by:using:)"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/UnwrapError": {
   "abstract" : [
@@ -882,6 +1475,30 @@
   "title" : "~(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/~(_:_:)"
+},
+"https://www.ietf.org/rfc/rfc3339": {
+  "identifier" : "https:\/\/www.ietf.org\/rfc\/rfc3339",
+  "title" : "RFC 3339",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 3339",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/www.ietf.org\/rfc\/rfc3339"
+},
+"https://www.iso.org/iso-8601-date-and-time-format.html": {
+  "identifier" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html",
+  "title" : "ISO 8601",
+  "titleInlineContent" : [
+    {
+      "text" : "ISO 8601",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/www.iso.org\/iso-8601-date-and-time-format.html"
 }
 }
 }
