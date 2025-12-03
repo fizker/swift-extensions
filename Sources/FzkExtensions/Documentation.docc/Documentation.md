@@ -35,3 +35,7 @@ A collection of small extensions and custom operators.
 
 - ``FzkExtensions/Swift/Sequence/sorted(by:)``
 - ``FzkExtensions/Swift/Sequence/sorted(by:using:)``
+
+### String interpolation
+
+- ``FzkExtensions/Swift/DefaultStringInterpolation/appendInterpolation(_:indentedWith:)``
