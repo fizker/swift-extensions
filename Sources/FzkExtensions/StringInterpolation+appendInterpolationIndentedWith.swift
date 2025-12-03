@@ -3,13 +3,15 @@ extension String.StringInterpolation {
 	///
 	/// The most simple example:
 	/// ```swift
-	/// #expect("\("""
-	/// foo
-	/// bar
-	/// """, indentedWith: "- ") == """
-	/// - foo
-	/// - bar
-	/// """)
+	/// let value = """
+	/// 	foo
+	/// 	bar
+	/// 	"""
+	/// #expect("\(value, indentedWith: "- ")" == """
+	/// 	- foo
+	/// 	- bar
+	/// 	"""
+	/// )
 	/// ```
 	///
 	/// A more useful example:
