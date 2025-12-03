@@ -44,7 +44,7 @@ public extension Optional {
 	/// let value = try value.unwrap(orThrow: CustomError.valueWasNil)
 	/// ```
 	///
-	/// - parameter orThrow: The error that should be thrown if the value is `nil`.
+	/// - parameter error: The error that should be thrown if the value is `nil`.
 	/// - returns: The unwrapped value.
 	/// - throws: If the value is nil.
 	func unwrap<E: Error>(orThrow error: @autoclosure () -> E) throws(E) -> Wrapped {

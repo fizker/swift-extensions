@@ -11,7 +11,7 @@ public extension Collection {
 	/// assert(array[safe: 3] == nil)
 	/// ```
 	///
-	/// - Parameter safe: The index of the element to return.
+	/// - Parameter index: The index of the element to return.
 	/// - Returns: The element at the index, or nil if the index is out of bounds.
 	subscript(safe index: Index) -> Element? {
 		guard index >= startIndex && index < endIndex
