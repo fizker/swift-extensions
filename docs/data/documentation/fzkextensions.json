@@ -81,6 +81,13 @@
       "title" : "Sequence (Array, ArraySlice, …)"
     },
     {
+      "anchor" : "String-interpolation",
+      "identifiers" : [
+        "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/DefaultStringInterpolation\/appendInterpolation(_:indentedWith:)"
+      ],
+      "title" : "String interpolation"
+    },
+    {
       "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
@@ -493,6 +500,71 @@
   "title" : "subscript(safe:)",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/swift\/collection\/subscript(safe:)"
+},
+"doc://FzkExtensions/documentation/FzkExtensions/Swift/DefaultStringInterpolation/appendInterpolation(_:indentedWith:)": {
+  "abstract" : [
+    {
+      "text" : "Indents each newline-separated line with the given value.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "appendInterpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "indentedWith"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/FzkExtensions\/documentation\/FzkExtensions\/Swift\/DefaultStringInterpolation\/appendInterpolation(_:indentedWith:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "appendInterpolation(_:indentedWith:)",
+  "type" : "topic",
+  "url" : "\/documentation\/fzkextensions\/swift\/defaultstringinterpolation\/appendinterpolation(_:indentedwith:)"
 },
 "doc://FzkExtensions/documentation/FzkExtensions/Swift/Optional/unwrap()": {
   "abstract" : [

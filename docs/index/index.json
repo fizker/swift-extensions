@@ -143,6 +143,15 @@
             "type" : "method"
           },
           {
+            "title" : "String interpolation",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/fzkextensions\/swift\/defaultstringinterpolation\/appendinterpolation(_:indentedwith:)",
+            "title" : "func appendInterpolation<T>(T, indentedWith: String)",
+            "type" : "method"
+          },
+          {
             "title" : "Operators",
             "type" : "groupMarker"
           },

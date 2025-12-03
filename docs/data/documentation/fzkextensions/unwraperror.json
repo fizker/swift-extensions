@@ -79,7 +79,8 @@
         "doc:\/\/FzkExtensions\/SQ",
         "doc:\/\/FzkExtensions\/s5ErrorP",
         "doc:\/\/FzkExtensions\/SH",
-        "doc:\/\/FzkExtensions\/s8SendableP"
+        "doc:\/\/FzkExtensions\/s8SendableP",
+        "doc:\/\/FzkExtensions\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -434,6 +435,11 @@
   "title" : "UnwrapError.valueWasNil",
   "type" : "topic",
   "url" : "\/documentation\/fzkextensions\/unwraperror\/valuewasnil"
+},
+"doc://FzkExtensions/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/FzkExtensions\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://FzkExtensions/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/FzkExtensions\/s23CustomStringConvertibleP",
